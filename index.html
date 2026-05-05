@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes">
+  <title>Numics Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0A0E1A;
+      --surface: #141828;
+      --text: #F0F4FF;
+      --muted: rgba(240, 244, 255, 0.55);
+      --accent: #00D4B4;
+      --warn-bg: rgba(245, 166, 35, 0.12);
+      --warn-border: rgba(245, 166, 35, 0.45);
+      --warn-text: #F5A623;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 28px 22px 80px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 6px;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 24px;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      margin: 32px 0 8px;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 20px 0 6px;
+      color: var(--text);
+    }
+    p, li { color: var(--text); }
+    p { margin: 8px 0; }
+    ul { margin: 6px 0 14px; padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      background: var(--surface);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .draft {
+      background: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 0 0 24px;
+      color: var(--warn-text);
+      font-size: 14px;
+    }
+    .draft strong { color: var(--warn-text); }
+    .card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 12px 0;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 14px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      vertical-align: top;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .footer {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Numics Privacy Policy</h1>
+    <p class="meta">Last updated: 2026-05-05 · Version: DRAFT</p>
+
+    <div class="draft">
+      <strong>DRAFT — not legal review.</strong> This policy was generated from the
+      Numics codebase (Supabase, RevenueCat, PostHog, ElevenLabs, Anthropic, camera /
+      microphone / photos, on-device engagement sensing). Have qualified counsel
+      review before submitting to the App Store or any regulator. Adjust the
+      contact details, data-retention windows, and processor representations to
+      match your actual operational practice and any data-processing agreements
+      you have in place with the named processors.
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>
+      Numics is an AI-powered tutoring app for grades 6&ndash;12 + AP. This policy
+      describes what information the app collects, how it's used, who it's
+      shared with, and the choices you have. By using Numics you agree to the
+      practices described below.
+    </p>
+    <p>
+      Contact: <a href="mailto:hello@numics.app">hello@numics.app</a>
+      (replace with your operational contact before publishing).
+    </p>
+
+    <h2>2. Summary</h2>
+    <ul>
+      <li>We collect the minimum data needed to teach: a name, grade, email, and
+      the conversations the student has with the AI tutor (Kai).</li>
+      <li>Conversations &mdash; including any text, voice transcripts, photos,
+      or handwritten work the student sends &mdash; are processed by third-party
+      AI providers (Anthropic, ElevenLabs) so Kai can respond.</li>
+      <li>We use Supabase to store account data and session history,
+      RevenueCat to handle subscriptions, and PostHog to understand how the app
+      is used in aggregate.</li>
+      <li>Camera, microphone, and photo-library access only run when the
+      student explicitly initiates the corresponding feature.</li>
+      <li>Engagement sensing (the optional on-device feature that watches for
+      signs of confusion) runs entirely on the device. Only a single per-session
+      engagement score is stored.</li>
+      <li>We do not sell personal information.</li>
+    </ul>
+
+    <h2>3. Information we collect</h2>
+
+    <h3>3.1 Information you provide</h3>
+    <ul>
+      <li><strong>Account info:</strong> name (or display name), email
+      address, grade level, subject preferences. Collected during onboarding
+      and editable in Settings.</li>
+      <li><strong>Authentication:</strong> magic-link tokens emailed to you at
+      sign-in. We never see or store your email password (we don't issue
+      passwords).</li>
+      <li><strong>Subscription state:</strong> whether your account has an
+      active premium subscription, the product purchased, and the billing
+      platform's transaction identifiers. Payment card numbers are handled by
+      Apple In-App Purchase / RevenueCat &mdash; we do not see them.</li>
+    </ul>
+
+    <h3>3.2 Information generated while using the app</h3>
+    <ul>
+      <li><strong>Tutoring conversations:</strong> the student's typed, spoken,
+      photographed, or handwritten input, plus Kai's text and audio responses.
+      Stored under your account so you can resume sessions.</li>
+      <li><strong>Concept &amp; mastery data:</strong> which curriculum bands
+      and concepts have been taught and at what mastery level. Used to drive
+      the Progress tab and spaced-repetition scheduling.</li>
+      <li><strong>Engagement score:</strong> if you enable engagement sensing,
+      one summary score per session indicating how engaged the student appeared.
+      The underlying camera/microphone analysis runs on-device and is not
+      uploaded; only the score is stored.</li>
+      <li><strong>Product analytics:</strong> events such as "session started",
+      "concept tapped", "sim opened" along with anonymous app metadata
+      (app version, device type, locale). See section 4.4.</li>
+    </ul>
+
+    <h3>3.3 Information collected automatically</h3>
+    <ul>
+      <li>Device identifiers needed by the operating system, App Store, and
+      crash reporting (e.g. an anonymized installation ID assigned by
+      PostHog).</li>
+      <li>Approximate language / locale.</li>
+    </ul>
+
+    <h3>3.4 Information we do <em>not</em> collect</h3>
+    <ul>
+      <li>Precise location.</li>
+      <li>Contacts, calendar, health, or financial data.</li>
+      <li>Camera or microphone data outside the moments the student
+      explicitly takes a photo, dictates, or uses handwriting input.</li>
+    </ul>
+
+    <h2>4. Third-party processors</h2>
+    <p>
+      We rely on the providers below to deliver the app. Each receives only the
+      data necessary for its function. None of them are authorized to use
+      Numics data to train their general-purpose models.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Processor</th>
+          <th>What we send</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Supabase</strong> (database + auth)</td>
+          <td>Account profile, magic-link auth, session messages, concept
+          mastery, engagement score.</td>
+          <td>Storage and authentication. Hosted in the EU/US region per your
+          Supabase project configuration.</td>
+        </tr>
+        <tr>
+          <td><strong>Anthropic</strong> (Claude API)</td>
+          <td>The student's text input, voice transcripts, photos taken in
+          the app, and PencilKit handwriting; the system prompt; prior turns
+          of the same conversation.</td>
+          <td>Generates Kai's tutoring responses. Anthropic processes
+          requests to produce the response and per their API terms does not
+          use API content to train their general models.</td>
+        </tr>
+        <tr>
+          <td><strong>ElevenLabs</strong> (text-to-speech)</td>
+          <td>The text Kai speaks aloud (a cleaned version of the response,
+          with math notation rewritten for natural speech).</td>
+          <td>Generates Kai's voice audio. Audio is streamed to the device
+          and not retained client-side beyond the playback session.</td>
+        </tr>
+        <tr>
+          <td><strong>RevenueCat</strong> (subscription orchestration)</td>
+          <td>Apple receipt data, anonymized user ID, entitlement state.</td>
+          <td>Validates In-App Purchase receipts and tracks subscription
+          status. We never receive payment card numbers; Apple handles
+          billing.</td>
+        </tr>
+        <tr>
+          <td><strong>PostHog</strong> (product analytics)</td>
+          <td>Product event names + properties (e.g. "session_started",
+          "subject:math"), app version, device type, anonymous installation
+          ID. We do <em>not</em> send conversation contents.</td>
+          <td>Helps us understand which features are used so we can improve
+          the app. Self-hostable; configure region in your PostHog project
+          settings.</td>
+        </tr>
+        <tr>
+          <td><strong>Apple</strong> (operating system)</td>
+          <td>App Store / App Store Connect data, push notification tokens
+          (if enabled), crash logs (if enabled by you in iOS Settings).</td>
+          <td>App distribution and platform integration.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>4.1 On-device processing</h3>
+    <p>
+      The following run on the device and do <em>not</em> transmit raw audio
+      or video to any server:
+    </p>
+    <ul>
+      <li><strong>Speech recognition</strong> for voice dictation
+      (<code>SFSpeechRecognizer</code>). Apple may handle dictation
+      on-device or via Apple's servers depending on the device and language;
+      see Apple's privacy documentation.</li>
+      <li><strong>Engagement sensing</strong> (when enabled). All audio /
+      vision analysis is performed on-device. Only a single engagement
+      score per session leaves the device.</li>
+    </ul>
+
+    <h3>4.2 Camera and microphone</h3>
+    <p>
+      Camera access is requested only when the student taps the camera button
+      in the chat input bar. Photos are resized on-device, JPEG-encoded, and
+      sent as a Claude API attachment so Kai can read the math, equation, or
+      diagram and respond. Photos are not retained outside the conversation
+      transcript stored under your account.
+    </p>
+    <p>
+      Microphone access is requested only when the student starts voice
+      dictation. The transcribed text (not raw audio) is sent to Anthropic
+      as part of the conversation. ElevenLabs audio playback uses the
+      device speaker only.
+    </p>
+
+    <h3>4.3 Photo library</h3>
+    <p>
+      If the device's camera is unavailable, the camera button falls back to
+      the photo picker. Only the photo the student explicitly selects is
+      uploaded; we do not enumerate the library.
+    </p>
+
+    <h3>4.4 Analytics scope</h3>
+    <p>
+      Product analytics events are intentionally narrow: which subject was
+      opened, which concept was tapped, which simulation was viewed, session
+      duration, app version, and similar interaction signals. We do
+      <em>not</em> send the contents of conversations, photos, voice
+      transcripts, or handwriting strokes to PostHog.
+    </p>
+
+    <h2>5. Children &amp; COPPA</h2>
+    <p>
+      Numics is intended for students in grades 6&ndash;12, which spans
+      ages roughly 11&ndash;18. Some users will be under 13.
+    </p>
+    <ul>
+      <li>For users under 13 we comply with the Children's Online Privacy
+      Protection Act (COPPA). We collect only what's needed to provide the
+      tutoring service and we do not knowingly use children's data for
+      behavioral advertising or sell it to third parties.</li>
+      <li>Where a school district or guardian establishes the account on the
+      child's behalf under a school agreement, that agreement governs
+      verifiable parental consent.</li>
+      <li>Parents/guardians can request deletion of a child's account and
+      associated data at any time by emailing the contact address above.
+      We will delete or de-identify the data within 30 days of a verified
+      request.</li>
+      <li>Parents can review the data associated with a child's account by
+      requesting an export through the same contact address.</li>
+    </ul>
+
+    <h2>6. How long we keep data</h2>
+    <ul>
+      <li><strong>Account data:</strong> until you delete your account.</li>
+      <li><strong>Conversation transcripts:</strong> until you delete your
+      account or use the in-app "Delete history" control (when present).</li>
+      <li><strong>Engagement scores &amp; mastery data:</strong> kept while
+      your account is active to drive the Progress tab; deleted with the
+      account.</li>
+      <li><strong>Analytics events:</strong> retained according to PostHog's
+      default retention (typically 7 years) unless you've configured a
+      shorter window in your PostHog project.</li>
+      <li><strong>Subscription/billing records:</strong> retained as required
+      by tax and accounting law (typically 7&ndash;10 years), held primarily
+      by Apple and RevenueCat.</li>
+    </ul>
+
+    <h2>7. Your choices &amp; rights</h2>
+    <ul>
+      <li><strong>Edit profile:</strong> change your name, grade, or
+      enabled subjects in Settings at any time.</li>
+      <li><strong>Engagement sensing:</strong> turn it off in Settings &rarr;
+      Privacy. When off, no engagement analysis runs, and no engagement
+      scores are stored.</li>
+      <li><strong>Microphone &amp; camera:</strong> revoke permission in iOS
+      Settings &rarr; Numics at any time. The corresponding features will
+      simply stop working.</li>
+      <li><strong>Subscription:</strong> manage or cancel via Apple Settings
+      &rarr; Subscriptions.</li>
+      <li><strong>Sign out:</strong> Settings &rarr; Sign out.</li>
+      <li><strong>Account deletion:</strong> email the address above to
+      request full deletion. We'll confirm and process within 30 days.</li>
+      <li><strong>Right to access / correct / port / delete</strong>
+      (under GDPR, CCPA, and similar laws): contact the address above.
+      We respond within the deadlines those laws require.</li>
+      <li><strong>Do Not Sell / Share</strong> (CCPA): we do not sell or
+      share personal information for cross-context behavioral advertising.</li>
+    </ul>
+
+    <h2>8. Security</h2>
+    <p>
+      We use TLS for all network requests, Supabase Row-Level Security to
+      isolate per-user data, and standard iOS Keychain storage for any
+      device-side credentials. No system is perfectly secure, but we follow
+      industry-standard practices for protecting personal data and will
+      notify affected users in the event of a confirmed breach as required
+      by applicable law.
+    </p>
+
+    <h2>9. International transfers</h2>
+    <p>
+      Depending on the configuration of our processors, data may be
+      processed in the United States, the European Union, or other
+      regions. Where required, transfers rely on Standard Contractual
+      Clauses or comparable safeguards.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      We may update this policy as the app changes. Material changes will
+      be flagged in-app or by email before they take effect. The "Last
+      updated" date at the top reflects the current version.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      Questions, requests, or COPPA-related contact:
+      <a href="mailto:hello@numics.app">hello@numics.app</a>
+      (replace before publishing).
+    </p>
+
+    <p class="footer">
+      &copy; 2026 Numics. This policy is provided as a starting draft; review
+      with qualified counsel before publication.
+    </p>
+  </main>
+</body>
+</html>
